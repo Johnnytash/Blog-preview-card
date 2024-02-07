@@ -1,0 +1,136 @@
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  background-color: #80bcbd;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: "Figtree", sans-serif;
+}
+
+.container {
+  max-height: 100vh;
+  max-width: 500px;
+  display: flex;
+  justify-items: center;
+  background-color: aliceblue;
+  flex-direction: column;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 20px 20px;
+  overflow-y: auto;
+}
+
+.illustration > img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+#myButton {
+  background-color: #80bcbd;
+  margin-top: 20px;
+  color: black;
+  font-weight: 800;
+  border-radius: 5px;
+  border-style: none;
+  width: 110px;
+  height: 40px;
+  font-size: 16px;
+}
+
+.date {
+  font-size: 12px;
+  color: grey;
+}
+
+.course {
+  margin: 0;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+}
+
+.author:hover {
+  cursor: pointer;
+}
+
+.avatar {
+  margin-right: 10px;
+}
+
+.author-info h2 {
+  margin: 0;
+}
+
+p {
+  font-size: 20px;
+  margin-top: 0px;
+  line-height: 20px;
+  color: grey;
+  line-height: 1;
+  letter-spacing: -0.5px;
+}
+
+h1 {
+  font-size: 27px;
+  font-weight: 800;
+}
+
+h1:hover {
+  cursor: pointer;
+  color: skyblue;
+}
+
+.attribution {
+  font-size: 20px;
+  text-align: center;
+  color: hsl(228, 45%, 44%);
+  margin-bottom: 0px;
+  margin-top: 30px;
+}
+
+@media (max-width: 1440px) {
+  body {
+    font-size: 16px;
+  }
+  .date {
+    font-size: 12px;
+  }
+
+  .container {
+    max-width: 80%;
+    padding: 20px;
+    box-shadow: 20px 20px;
+  }
+
+  .illustration > img {
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: 375px) {
+  body {
+    font-size: 11px;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 20px;
+    margin: 300px 30px;
+    box-shadow: 10px 10px;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .attribution {
+    font-size: 15px;
+  }
+  .author {
+    font-size: 16px;
+  }
+}
